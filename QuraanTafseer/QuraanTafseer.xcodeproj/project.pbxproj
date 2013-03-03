@@ -16,13 +16,13 @@
 		217E49FE16E3635400A002E9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 217E49FD16E3635400A002E9 /* Default.png */; };
 		217E4A0016E3635400A002E9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 217E49FF16E3635400A002E9 /* Default@2x.png */; };
 		217E4A0216E3635400A002E9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 217E4A0116E3635400A002E9 /* Default-568h@2x.png */; };
-		217E4A0516E3635400A002E9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 217E4A0416E3635400A002E9 /* ViewController.m */; };
-		217E4A0816E3635400A002E9 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 217E4A0616E3635400A002E9 /* ViewController.xib */; };
 		217E4A1516E3696900A002E9 /* AbstractSqliteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 217E4A1416E3691700A002E9 /* AbstractSqliteManager.m */; };
 		217E4A1716E36A5E00A002E9 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 217E4A1616E36A5E00A002E9 /* libsqlite3.0.dylib */; };
 		217E4A1B16E36D1200A002E9 /* Tafseer.m in Sources */ = {isa = PBXBuildFile; fileRef = 217E4A1A16E36D1200A002E9 /* Tafseer.m */; };
 		217E4A1F16E3734800A002E9 /* TafseerDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 217E4A1E16E3734800A002E9 /* TafseerDBManager.m */; };
 		217E4A2016E3831800A002E9 /* QuraanTafseer.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 217E4A0E16E3683F00A002E9 /* QuraanTafseer.sqlite */; };
+		217E4A2516E39B0C00A002E9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 217E4A2316E39B0C00A002E9 /* MainViewController.m */; };
+		217E4A2816E3B3B700A002E9 /* MainStoryboard-iphone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 217E4A2716E3B3B700A002E9 /* MainStoryboard-iphone.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,9 +39,6 @@
 		217E49FD16E3635400A002E9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		217E49FF16E3635400A002E9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		217E4A0116E3635400A002E9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		217E4A0316E3635400A002E9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		217E4A0416E3635400A002E9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		217E4A0716E3635400A002E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
 		217E4A0E16E3683F00A002E9 /* QuraanTafseer.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = QuraanTafseer.sqlite; sourceTree = "<group>"; };
 		217E4A1316E3691700A002E9 /* AbstractSqliteManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractSqliteManager.h; sourceTree = "<group>"; };
 		217E4A1416E3691700A002E9 /* AbstractSqliteManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbstractSqliteManager.m; sourceTree = "<group>"; };
@@ -50,6 +47,9 @@
 		217E4A1A16E36D1200A002E9 /* Tafseer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tafseer.m; sourceTree = "<group>"; };
 		217E4A1D16E3734800A002E9 /* TafseerDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TafseerDBManager.h; sourceTree = "<group>"; };
 		217E4A1E16E3734800A002E9 /* TafseerDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TafseerDBManager.m; sourceTree = "<group>"; };
+		217E4A2216E39B0C00A002E9 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		217E4A2316E39B0C00A002E9 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		217E4A2716E3B3B700A002E9 /* MainStoryboard-iphone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "MainStoryboard-iphone.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,14 +98,12 @@
 		217E49F116E3635400A002E9 /* QuraanTafseer */ = {
 			isa = PBXGroup;
 			children = (
+				217E49FA16E3635400A002E9 /* AppDelegate.h */,
+				217E49FB16E3635400A002E9 /* AppDelegate.m */,
+				217E4A2716E3B3B700A002E9 /* MainStoryboard-iphone.storyboard */,
 				217E4A1016E3687000A002E9 /* Model */,
 				217E4A1116E3687000A002E9 /* View */,
 				217E4A0F16E3687000A002E9 /* Controllers */,
-				217E49FA16E3635400A002E9 /* AppDelegate.h */,
-				217E49FB16E3635400A002E9 /* AppDelegate.m */,
-				217E4A0316E3635400A002E9 /* ViewController.h */,
-				217E4A0416E3635400A002E9 /* ViewController.m */,
-				217E4A0616E3635400A002E9 /* ViewController.xib */,
 				217E49F216E3635400A002E9 /* Supporting Files */,
 			);
 			path = QuraanTafseer;
@@ -129,6 +127,7 @@
 		217E4A0F16E3687000A002E9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				217E4A2116E39AE100A002E9 /* MainViewController */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -175,6 +174,15 @@
 				217E4A1E16E3734800A002E9 /* TafseerDBManager.m */,
 			);
 			path = TafseerDBManager;
+			sourceTree = "<group>";
+		};
+		217E4A2116E39AE100A002E9 /* MainViewController */ = {
+			isa = PBXGroup;
+			children = (
+				217E4A2216E39B0C00A002E9 /* MainViewController.h */,
+				217E4A2316E39B0C00A002E9 /* MainViewController.m */,
+			);
+			path = MainViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,8 +240,8 @@
 				217E49FE16E3635400A002E9 /* Default.png in Resources */,
 				217E4A0016E3635400A002E9 /* Default@2x.png in Resources */,
 				217E4A0216E3635400A002E9 /* Default-568h@2x.png in Resources */,
-				217E4A0816E3635400A002E9 /* ViewController.xib in Resources */,
 				217E4A2016E3831800A002E9 /* QuraanTafseer.sqlite in Resources */,
+				217E4A2816E3B3B700A002E9 /* MainStoryboard-iphone.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,9 +255,9 @@
 				217E4A1516E3696900A002E9 /* AbstractSqliteManager.m in Sources */,
 				217E49F816E3635400A002E9 /* main.m in Sources */,
 				217E49FC16E3635400A002E9 /* AppDelegate.m in Sources */,
-				217E4A0516E3635400A002E9 /* ViewController.m in Sources */,
 				217E4A1B16E36D1200A002E9 /* Tafseer.m in Sources */,
 				217E4A1F16E3734800A002E9 /* TafseerDBManager.m in Sources */,
+				217E4A2516E39B0C00A002E9 /* MainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -262,14 +270,6 @@
 				217E49F516E3635400A002E9 /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		217E4A0616E3635400A002E9 /* ViewController.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				217E4A0716E3635400A002E9 /* en */,
-			);
-			name = ViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
