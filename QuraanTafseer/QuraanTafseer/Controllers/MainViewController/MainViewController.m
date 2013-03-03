@@ -23,6 +23,11 @@
     return self;
 }
 
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    NSLog(@"seque");
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -42,4 +47,7 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)ButtonClicked:(id)sender {
+    [self performSegueWithIdentifier:@"goToDetails" sender:self];
+}
 @end

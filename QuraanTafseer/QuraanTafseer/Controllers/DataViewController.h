@@ -1,5 +1,5 @@
 //
-//  MainViewController.h
+//  DataViewController.h
 //  QuraanTafseer
 //
 //  Created by Hossam on 3/3/13.
@@ -8,9 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainViewController : UIViewController
 
 
-- (IBAction)ButtonClicked:(id)sender;
+@interface DataViewController : UITableViewController
 
 @end
