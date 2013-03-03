@@ -18,6 +18,11 @@
 		217E4A0216E3635400A002E9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 217E4A0116E3635400A002E9 /* Default-568h@2x.png */; };
 		217E4A0516E3635400A002E9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 217E4A0416E3635400A002E9 /* ViewController.m */; };
 		217E4A0816E3635400A002E9 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 217E4A0616E3635400A002E9 /* ViewController.xib */; };
+		217E4A1516E3696900A002E9 /* AbstractSqliteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 217E4A1416E3691700A002E9 /* AbstractSqliteManager.m */; };
+		217E4A1716E36A5E00A002E9 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 217E4A1616E36A5E00A002E9 /* libsqlite3.0.dylib */; };
+		217E4A1B16E36D1200A002E9 /* Tafseer.m in Sources */ = {isa = PBXBuildFile; fileRef = 217E4A1A16E36D1200A002E9 /* Tafseer.m */; };
+		217E4A1F16E3734800A002E9 /* TafseerDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 217E4A1E16E3734800A002E9 /* TafseerDBManager.m */; };
+		217E4A2016E3831800A002E9 /* QuraanTafseer.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 217E4A0E16E3683F00A002E9 /* QuraanTafseer.sqlite */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +42,14 @@
 		217E4A0316E3635400A002E9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		217E4A0416E3635400A002E9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		217E4A0716E3635400A002E9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		217E4A0E16E3683F00A002E9 /* QuraanTafseer.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = QuraanTafseer.sqlite; sourceTree = "<group>"; };
+		217E4A1316E3691700A002E9 /* AbstractSqliteManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AbstractSqliteManager.h; sourceTree = "<group>"; };
+		217E4A1416E3691700A002E9 /* AbstractSqliteManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AbstractSqliteManager.m; sourceTree = "<group>"; };
+		217E4A1616E36A5E00A002E9 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		217E4A1916E36D1200A002E9 /* Tafseer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tafseer.h; sourceTree = "<group>"; };
+		217E4A1A16E36D1200A002E9 /* Tafseer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tafseer.m; sourceTree = "<group>"; };
+		217E4A1D16E3734800A002E9 /* TafseerDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TafseerDBManager.h; sourceTree = "<group>"; };
+		217E4A1E16E3734800A002E9 /* TafseerDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TafseerDBManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				217E4A1716E36A5E00A002E9 /* libsqlite3.0.dylib in Frameworks */,
 				217E49EC16E3635400A002E9 /* UIKit.framework in Frameworks */,
 				217E49EE16E3635400A002E9 /* Foundation.framework in Frameworks */,
 				217E49F016E3635400A002E9 /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +87,7 @@
 		217E49EA16E3635400A002E9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				217E4A1616E36A5E00A002E9 /* libsqlite3.0.dylib */,
 				217E49EB16E3635400A002E9 /* UIKit.framework */,
 				217E49ED16E3635400A002E9 /* Foundation.framework */,
 				217E49EF16E3635400A002E9 /* CoreGraphics.framework */,
@@ -83,6 +98,9 @@
 		217E49F116E3635400A002E9 /* QuraanTafseer */ = {
 			isa = PBXGroup;
 			children = (
+				217E4A1016E3687000A002E9 /* Model */,
+				217E4A1116E3687000A002E9 /* View */,
+				217E4A0F16E3687000A002E9 /* Controllers */,
 				217E49FA16E3635400A002E9 /* AppDelegate.h */,
 				217E49FB16E3635400A002E9 /* AppDelegate.m */,
 				217E4A0316E3635400A002E9 /* ViewController.h */,
@@ -97,6 +115,7 @@
 			isa = PBXGroup;
 			children = (
 				217E49F316E3635400A002E9 /* QuraanTafseer-Info.plist */,
+				217E4A0E16E3683F00A002E9 /* QuraanTafseer.sqlite */,
 				217E49F416E3635400A002E9 /* InfoPlist.strings */,
 				217E49F716E3635400A002E9 /* main.m */,
 				217E49F916E3635400A002E9 /* QuraanTafseer-Prefix.pch */,
@@ -105,6 +124,57 @@
 				217E4A0116E3635400A002E9 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		217E4A0F16E3687000A002E9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		217E4A1016E3687000A002E9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				217E4A1816E36CF700A002E9 /* DataStructure */,
+				217E4A1216E368EF00A002E9 /* DataBase */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		217E4A1116E3687000A002E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		217E4A1216E368EF00A002E9 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				217E4A1C16E3733100A002E9 /* TafseerDBManager */,
+				217E4A1316E3691700A002E9 /* AbstractSqliteManager.h */,
+				217E4A1416E3691700A002E9 /* AbstractSqliteManager.m */,
+			);
+			path = DataBase;
+			sourceTree = "<group>";
+		};
+		217E4A1816E36CF700A002E9 /* DataStructure */ = {
+			isa = PBXGroup;
+			children = (
+				217E4A1916E36D1200A002E9 /* Tafseer.h */,
+				217E4A1A16E36D1200A002E9 /* Tafseer.m */,
+			);
+			path = DataStructure;
+			sourceTree = "<group>";
+		};
+		217E4A1C16E3733100A002E9 /* TafseerDBManager */ = {
+			isa = PBXGroup;
+			children = (
+				217E4A1D16E3734800A002E9 /* TafseerDBManager.h */,
+				217E4A1E16E3734800A002E9 /* TafseerDBManager.m */,
+			);
+			path = TafseerDBManager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,6 +233,7 @@
 				217E4A0016E3635400A002E9 /* Default@2x.png in Resources */,
 				217E4A0216E3635400A002E9 /* Default-568h@2x.png in Resources */,
 				217E4A0816E3635400A002E9 /* ViewController.xib in Resources */,
+				217E4A2016E3831800A002E9 /* QuraanTafseer.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,9 +244,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				217E4A1516E3696900A002E9 /* AbstractSqliteManager.m in Sources */,
 				217E49F816E3635400A002E9 /* main.m in Sources */,
 				217E49FC16E3635400A002E9 /* AppDelegate.m in Sources */,
 				217E4A0516E3635400A002E9 /* ViewController.m in Sources */,
+				217E4A1B16E36D1200A002E9 /* Tafseer.m in Sources */,
+				217E4A1F16E3734800A002E9 /* TafseerDBManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

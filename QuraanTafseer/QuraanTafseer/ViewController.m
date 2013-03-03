@@ -18,6 +18,14 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    TafseerDBManager *manager = [[TafseerDBManager alloc] init];
+    NSMutableArray *tafseers = [manager getTafseerForSurahNo:113];
+    
+    for (Tafseer *tafseer in tafseers) {
+       
+        [self.textView setText:[NSString stringWithFormat:@"%@ \n %@", self.textView.text, tafseer.text ]];
+    }
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -26,4 +34,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewDidUnload {
+    [self setTextView:nil];
+    [super viewDidUnload];
+}
 @end
