@@ -23,9 +23,9 @@
 		217E4A2016E3831800A002E9 /* QuraanTafseer.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 217E4A0E16E3683F00A002E9 /* QuraanTafseer.sqlite */; };
 		217E4A2516E39B0C00A002E9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 217E4A2316E39B0C00A002E9 /* MainViewController.m */; };
 		217E4A2816E3B3B700A002E9 /* MainStoryboard-iphone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 217E4A2716E3B3B700A002E9 /* MainStoryboard-iphone.storyboard */; };
-		217E4A3716E3BA9100A002E9 /* SDWebImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217E4A3616E3BA9100A002E9 /* SDWebImage.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		217E4A3916E3BAAB00A002E9 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217E4A3816E3BAAB00A002E9 /* ImageIO.framework */; };
 		217E4A3C16E3BC5A00A002E9 /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 217E4A3B16E3BC5A00A002E9 /* DataViewController.m */; };
+		2180259816E49BF30046E80A /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; fileRef = 2180259716E49BF30046E80A /* SDWebImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,7 +57,7 @@
 		217E4A3816E3BAAB00A002E9 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		217E4A3A16E3BC5A00A002E9 /* DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
 		217E4A3B16E3BC5A00A002E9 /* DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
-		217E4A3D16E3C7E100A002E9 /* SDWebImage */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = SDWebImage; path = QuraanTafseer/Model/Lib/SDWebImage.framework/Versions/A/SDWebImage; sourceTree = "<group>"; };
+		2180259716E49BF30046E80A /* SDWebImage */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = SDWebImage; path = ../../../SDWebImageLibrary/SDWebImage.framework/Versions/A/SDWebImage; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,12 +65,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2180259816E49BF30046E80A /* SDWebImage in Frameworks */,
 				217E4A3916E3BAAB00A002E9 /* ImageIO.framework in Frameworks */,
 				217E4A1716E36A5E00A002E9 /* libsqlite3.0.dylib in Frameworks */,
 				217E49EC16E3635400A002E9 /* UIKit.framework in Frameworks */,
 				217E49EE16E3635400A002E9 /* Foundation.framework in Frameworks */,
 				217E49F016E3635400A002E9 /* CoreGraphics.framework in Frameworks */,
-				217E4A3716E3BA9100A002E9 /* SDWebImage.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +80,7 @@
 		217E49DC16E3635400A002E9 = {
 			isa = PBXGroup;
 			children = (
-				217E4A3D16E3C7E100A002E9 /* SDWebImage */,
+				2180259716E49BF30046E80A /* SDWebImage */,
 				217E49F116E3635400A002E9 /* QuraanTafseer */,
 				217E49EA16E3635400A002E9 /* Frameworks */,
 				217E49E816E3635400A002E9 /* Products */,
@@ -364,6 +364,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/QuraanTafseer/Model/Lib/SDWebImage.framework/Versions/A\"",
+					"\"$(SRCROOT)/../../../SDWebImageLibrary/SDWebImage.framework/Versions/A\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -384,6 +385,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$(SRCROOT)/QuraanTafseer/Model/Lib/SDWebImage.framework/Versions/A\"",
+					"\"$(SRCROOT)/../../../SDWebImageLibrary/SDWebImage.framework/Versions/A\"",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -409,6 +411,7 @@
 				217E4A0D16E3635400A002E9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

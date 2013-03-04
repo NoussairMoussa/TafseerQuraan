@@ -69,7 +69,8 @@
     }
     cell.textLabel.text = [NSString stringWithFormat:@"Cell %d", indexPath.row];
     
-    [cell.imageView setImageWithURL:[NSURL URLWithString:@"http://static.go4celebrity.com/wallpapers/Jason-Statham/Jason-Statham-016.jpg"]];
+
+    [cell.imageView setImageWithURL:[NSURL URLWithString:@"http://static.go4celebrity.com/wallpapers/Jason-Statham/Jason-Statham-016.jpg"] placeholderImage:nil options:SDWebImageRetryFailed];
     
     return cell;
 }
