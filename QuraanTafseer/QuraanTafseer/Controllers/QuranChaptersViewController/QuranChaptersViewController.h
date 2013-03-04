@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "Constants.h"
 #import "SuraDBManager.h"
+#import "ArabicConverter.h"
 @interface QuranChaptersViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @end

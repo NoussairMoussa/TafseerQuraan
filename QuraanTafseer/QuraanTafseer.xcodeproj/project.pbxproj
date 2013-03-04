@@ -29,6 +29,10 @@
 		2180259E16E4AADD0046E80A /* QuranChaptersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2180259D16E4AADD0046E80A /* QuranChaptersViewController.m */; };
 		218025A416E4B4B60046E80A /* Sura.m in Sources */ = {isa = PBXBuildFile; fileRef = 218025A316E4B4B60046E80A /* Sura.m */; };
 		218025A816E4B5480046E80A /* SuraDBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 218025A716E4B5480046E80A /* SuraDBManager.m */; };
+		218025B016E4BFF50046E80A /* BFantezy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 218025AF16E4BFF50046E80A /* BFantezy.ttf */; };
+		218025B216E4C58C0046E80A /* Diwanltr.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 218025B116E4C58B0046E80A /* Diwanltr.ttf */; };
+		218025C216E4C9960046E80A /* ArabicConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 218025C116E4C97D0046E80A /* ArabicConverter.m */; };
+		218025C416E4CB850046E80A /* BElham.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 218025C316E4CB850046E80A /* BElham.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +72,11 @@
 		218025A316E4B4B60046E80A /* Sura.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sura.m; sourceTree = "<group>"; };
 		218025A616E4B5480046E80A /* SuraDBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SuraDBManager.h; sourceTree = "<group>"; };
 		218025A716E4B5480046E80A /* SuraDBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SuraDBManager.m; sourceTree = "<group>"; };
+		218025AF16E4BFF50046E80A /* BFantezy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = BFantezy.ttf; path = ../BFantezy.ttf; sourceTree = "<group>"; };
+		218025B116E4C58B0046E80A /* Diwanltr.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Diwanltr.ttf; path = ../Diwanltr.ttf; sourceTree = "<group>"; };
+		218025C016E4C97D0046E80A /* ArabicConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArabicConverter.h; sourceTree = "<group>"; };
+		218025C116E4C97D0046E80A /* ArabicConverter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArabicConverter.m; sourceTree = "<group>"; };
+		218025C316E4CB850046E80A /* BElham.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = BElham.ttf; path = ../BElham.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +144,7 @@
 		217E49F216E3635400A002E9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				218025CC16E4EB950046E80A /* Fonts */,
 				217E49F316E3635400A002E9 /* QuraanTafseer-Info.plist */,
 				217E4A0E16E3683F00A002E9 /* QuraanTafseer.sqlite */,
 				217E49F416E3635400A002E9 /* InfoPlist.strings */,
@@ -216,6 +226,8 @@
 		217E4A3316E3BA6000A002E9 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				218025C016E4C97D0046E80A /* ArabicConverter.h */,
+				218025C116E4C97D0046E80A /* ArabicConverter.m */,
 				217E4A3616E3BA9100A002E9 /* SDWebImage.framework */,
 			);
 			path = Lib;
@@ -255,6 +267,16 @@
 				218025A716E4B5480046E80A /* SuraDBManager.m */,
 			);
 			path = SuraDBManager;
+			sourceTree = "<group>";
+		};
+		218025CC16E4EB950046E80A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				218025C316E4CB850046E80A /* BElham.ttf */,
+				218025B116E4C58B0046E80A /* Diwanltr.ttf */,
+				218025AF16E4BFF50046E80A /* BFantezy.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,11 +331,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				217E49F616E3635400A002E9 /* InfoPlist.strings in Resources */,
+				218025B216E4C58C0046E80A /* Diwanltr.ttf in Resources */,
 				217E49FE16E3635400A002E9 /* Default.png in Resources */,
 				217E4A0016E3635400A002E9 /* Default@2x.png in Resources */,
 				217E4A0216E3635400A002E9 /* Default-568h@2x.png in Resources */,
 				217E4A2016E3831800A002E9 /* QuraanTafseer.sqlite in Resources */,
 				217E4A2816E3B3B700A002E9 /* MainStoryboard-iphone.storyboard in Resources */,
+				218025B016E4BFF50046E80A /* BFantezy.ttf in Resources */,
+				218025C416E4CB850046E80A /* BElham.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +349,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				218025C216E4C9960046E80A /* ArabicConverter.m in Sources */,
 				217E4A1516E3696900A002E9 /* AbstractSqliteManager.m in Sources */,
 				217E49F816E3635400A002E9 /* main.m in Sources */,
 				217E49FC16E3635400A002E9 /* AppDelegate.m in Sources */,

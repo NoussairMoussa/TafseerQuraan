@@ -47,7 +47,12 @@ NSMutableArray *allChapters;
     }
     
     Sura *currentSura = [allChapters objectAtIndex:indexPath.row];
-    cell.textLabel.text = currentSura.suraName;
+    //B Elham, Diwani Letter
+    cell.textLabel.font = [UIFont fontWithName:@"Diwani Letter" size:33];
+    ArabicConverter *converter = [[ArabicConverter alloc] init];
+    
+	NSString* convertedString = [converter convertArabic:currentSura.suraName];
+    cell.textLabel.text = convertedString;
     cell.textLabel.textAlignment = NSTextAlignmentCenter;
     
     return cell;
@@ -56,10 +61,10 @@ NSMutableArray *allChapters;
 #pragma mark UITableViewDelegate
 #pragma mark-
 
-//- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    
-//}
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 60;
+}
 
 #pragma mark-
 #pragma mark LifeCycle

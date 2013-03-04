@@ -46,10 +46,10 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
 }
 
 - (IBAction)ButtonClicked:(id)sender {
-    [self performSegueWithIdentifier:@"goToDetails" sender:self];
+    
 }
 @end
