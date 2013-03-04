@@ -66,6 +66,10 @@ NSMutableArray *allChapters;
     return 60;
 }
 
+
+
+
+
 #pragma mark-
 #pragma mark LifeCycle
 #pragma mark-
@@ -74,6 +78,14 @@ NSMutableArray *allChapters;
     [super viewDidLoad];
 	SuraDBManager *suraManager = [[SuraDBManager alloc] init];
     allChapters = [suraManager readRecords];
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    int pageIndex = 5;
+    PagingViewerViewController *pagingViewer = (PagingViewerViewController *)segue.destinationViewController;
+    pagingViewer.currentPageIndex = pageIndex;
+    
 }
 
 - (void)didReceiveMemoryWarning

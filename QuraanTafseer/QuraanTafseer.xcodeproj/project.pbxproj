@@ -33,6 +33,18 @@
 		218025B216E4C58C0046E80A /* Diwanltr.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 218025B116E4C58B0046E80A /* Diwanltr.ttf */; };
 		218025C216E4C9960046E80A /* ArabicConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 218025C116E4C97D0046E80A /* ArabicConverter.m */; };
 		218025C416E4CB850046E80A /* BElham.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 218025C316E4CB850046E80A /* BElham.ttf */; };
+		218025D116E4F17C0046E80A /* QuranPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 218025D016E4F17C0046E80A /* QuranPageViewController.m */; };
+		218025D916E4FA040046E80A /* PagingViewerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 218025D816E4FA040046E80A /* PagingViewerViewController.m */; };
+		218025E416E506B60046E80A /* 001.png in Resources */ = {isa = PBXBuildFile; fileRef = 218025DA16E506B50046E80A /* 001.png */; };
+		218025E516E506B60046E80A /* 002.png in Resources */ = {isa = PBXBuildFile; fileRef = 218025DB16E506B50046E80A /* 002.png */; };
+		218025E616E506B60046E80A /* 003.png in Resources */ = {isa = PBXBuildFile; fileRef = 218025DC16E506B50046E80A /* 003.png */; };
+		218025E716E506B60046E80A /* 004.png in Resources */ = {isa = PBXBuildFile; fileRef = 218025DD16E506B50046E80A /* 004.png */; };
+		218025E816E506B60046E80A /* 005.png in Resources */ = {isa = PBXBuildFile; fileRef = 218025DE16E506B50046E80A /* 005.png */; };
+		218025E916E506B60046E80A /* 006.png in Resources */ = {isa = PBXBuildFile; fileRef = 218025DF16E506B50046E80A /* 006.png */; };
+		218025EA16E506B60046E80A /* 007.png in Resources */ = {isa = PBXBuildFile; fileRef = 218025E016E506B50046E80A /* 007.png */; };
+		218025EB16E506B60046E80A /* 008.png in Resources */ = {isa = PBXBuildFile; fileRef = 218025E116E506B60046E80A /* 008.png */; };
+		218025EC16E506B60046E80A /* 009.png in Resources */ = {isa = PBXBuildFile; fileRef = 218025E216E506B60046E80A /* 009.png */; };
+		218025ED16E506B60046E80A /* 010.png in Resources */ = {isa = PBXBuildFile; fileRef = 218025E316E506B60046E80A /* 010.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +89,20 @@
 		218025C016E4C97D0046E80A /* ArabicConverter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArabicConverter.h; sourceTree = "<group>"; };
 		218025C116E4C97D0046E80A /* ArabicConverter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArabicConverter.m; sourceTree = "<group>"; };
 		218025C316E4CB850046E80A /* BElham.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = BElham.ttf; path = ../BElham.ttf; sourceTree = "<group>"; };
+		218025CF16E4F17C0046E80A /* QuranPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuranPageViewController.h; sourceTree = "<group>"; };
+		218025D016E4F17C0046E80A /* QuranPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuranPageViewController.m; sourceTree = "<group>"; };
+		218025D716E4FA040046E80A /* PagingViewerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PagingViewerViewController.h; sourceTree = "<group>"; };
+		218025D816E4FA040046E80A /* PagingViewerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PagingViewerViewController.m; sourceTree = "<group>"; };
+		218025DA16E506B50046E80A /* 001.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 001.png; sourceTree = "<group>"; };
+		218025DB16E506B50046E80A /* 002.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 002.png; sourceTree = "<group>"; };
+		218025DC16E506B50046E80A /* 003.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 003.png; sourceTree = "<group>"; };
+		218025DD16E506B50046E80A /* 004.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 004.png; sourceTree = "<group>"; };
+		218025DE16E506B50046E80A /* 005.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 005.png; sourceTree = "<group>"; };
+		218025DF16E506B50046E80A /* 006.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 006.png; sourceTree = "<group>"; };
+		218025E016E506B50046E80A /* 007.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 007.png; sourceTree = "<group>"; };
+		218025E116E506B60046E80A /* 008.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 008.png; sourceTree = "<group>"; };
+		218025E216E506B60046E80A /* 009.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 009.png; sourceTree = "<group>"; };
+		218025E316E506B60046E80A /* 010.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 010.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +170,16 @@
 		217E49F216E3635400A002E9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				218025DA16E506B50046E80A /* 001.png */,
+				218025DB16E506B50046E80A /* 002.png */,
+				218025DC16E506B50046E80A /* 003.png */,
+				218025DD16E506B50046E80A /* 004.png */,
+				218025DE16E506B50046E80A /* 005.png */,
+				218025DF16E506B50046E80A /* 006.png */,
+				218025E016E506B50046E80A /* 007.png */,
+				218025E116E506B60046E80A /* 008.png */,
+				218025E216E506B60046E80A /* 009.png */,
+				218025E316E506B60046E80A /* 010.png */,
 				218025CC16E4EB950046E80A /* Fonts */,
 				217E49F316E3635400A002E9 /* QuraanTafseer-Info.plist */,
 				217E4A0E16E3683F00A002E9 /* QuraanTafseer.sqlite */,
@@ -160,6 +196,9 @@
 		217E4A0F16E3687000A002E9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				218025D216E4F3DF0046E80A /* PagingViewerViewController */,
+				218025CE16E4F15C0046E80A /* QuranPageViewController */,
+				218025CD16E4F0530046E80A /* QuranReaderViewController */,
 				2180259B16E4AAB80046E80A /* QuranChaptersViewController */,
 				217E4A2116E39AE100A002E9 /* MainViewController */,
 				217E4A3A16E3BC5A00A002E9 /* DataViewController.h */,
@@ -279,6 +318,31 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		218025CD16E4F0530046E80A /* QuranReaderViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = QuranReaderViewController;
+			sourceTree = "<group>";
+		};
+		218025CE16E4F15C0046E80A /* QuranPageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				218025CF16E4F17C0046E80A /* QuranPageViewController.h */,
+				218025D016E4F17C0046E80A /* QuranPageViewController.m */,
+			);
+			path = QuranPageViewController;
+			sourceTree = "<group>";
+		};
+		218025D216E4F3DF0046E80A /* PagingViewerViewController */ = {
+			isa = PBXGroup;
+			children = (
+				218025D716E4FA040046E80A /* PagingViewerViewController.h */,
+				218025D816E4FA040046E80A /* PagingViewerViewController.m */,
+			);
+			path = PagingViewerViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -339,6 +403,16 @@
 				217E4A2816E3B3B700A002E9 /* MainStoryboard-iphone.storyboard in Resources */,
 				218025B016E4BFF50046E80A /* BFantezy.ttf in Resources */,
 				218025C416E4CB850046E80A /* BElham.ttf in Resources */,
+				218025E416E506B60046E80A /* 001.png in Resources */,
+				218025E516E506B60046E80A /* 002.png in Resources */,
+				218025E616E506B60046E80A /* 003.png in Resources */,
+				218025E716E506B60046E80A /* 004.png in Resources */,
+				218025E816E506B60046E80A /* 005.png in Resources */,
+				218025E916E506B60046E80A /* 006.png in Resources */,
+				218025EA16E506B60046E80A /* 007.png in Resources */,
+				218025EB16E506B60046E80A /* 008.png in Resources */,
+				218025EC16E506B60046E80A /* 009.png in Resources */,
+				218025ED16E506B60046E80A /* 010.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,6 +434,8 @@
 				2180259E16E4AADD0046E80A /* QuranChaptersViewController.m in Sources */,
 				218025A416E4B4B60046E80A /* Sura.m in Sources */,
 				218025A816E4B5480046E80A /* SuraDBManager.m in Sources */,
+				218025D116E4F17C0046E80A /* QuranPageViewController.m in Sources */,
+				218025D916E4FA040046E80A /* PagingViewerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
