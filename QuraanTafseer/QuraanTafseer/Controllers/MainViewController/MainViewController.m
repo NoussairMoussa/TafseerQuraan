@@ -28,6 +28,8 @@
     NSLog(@"seque");
 }
 
+
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
