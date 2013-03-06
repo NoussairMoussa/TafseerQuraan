@@ -16,7 +16,7 @@
 
 
 NSMutableArray *allChapters;
-
+NSMutableArray *quranPartitions;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -32,9 +32,45 @@ NSMutableArray *allChapters;
 #pragma mark UITableViewDataSource
 #pragma mark-
 
+//take the section number 0...27 and return corresponding juz2 of this section
+-(int)getJuzOfSection:(int) section
+{
+    int juz = 0;
+    switch (section) {
+        case 0:
+            juz = 1;
+            break;
+        case 1:
+            juz = 3;
+            break;
+        case 2:
+            juz = 4;
+            break;
+        default:
+            juz = section + 3;
+            break;
+    }
+    return juz;
+}
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 28;
+}
+
+- (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
+{
+    int juz = [self getJuzOfSection:section];
+    return [NSString stringWithFormat:@"Juz' %d", juz];
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-    return CHAPTERS_COUNT;
+    
+    int juz = [self getJuzOfSection:section];
+    NSArray *chaptersInJuz  = [allChapters filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"SELF.juz == %d", juz]];
+    
+    return chaptersInJuz.count;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -46,7 +82,10 @@ NSMutableArray *allChapters;
         
     }
     
-    Sura *currentSura = [allChapters objectAtIndex:indexPath.row];
+    int juz = [self getJuzOfSection:indexPath.section];
+    NSArray *chaptersInJuz  = [allChapters filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"SELF.juz == %d", juz]];
+    
+    Sura *currentSura = [chaptersInJuz objectAtIndex:indexPath.row];
     //B Elham, Diwani Letter
     cell.textLabel.font = [UIFont fontWithName:@"Diwani Letter" size:33];
     ArabicConverter *converter = [[ArabicConverter alloc] init];
@@ -67,15 +106,21 @@ NSMutableArray *allChapters;
 }
 
 
-
-
-
 #pragma mark-
 #pragma mark LifeCycle
 #pragma mark-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    
+    
+    
+    NSNumberFormatter *fmt = [[NSNumberFormatter alloc] init];
+    [fmt setPositiveFormat:@"0.###"];
+    NSNumber *n = [NSNumber numberWithFloat:12.50];
+    NSLog(@"%@", [fmt stringFromNumber:n]);
+    
 	SuraDBManager *suraManager = [[SuraDBManager alloc] init];
     allChapters = [suraManager readRecords];
 }

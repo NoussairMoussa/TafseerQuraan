@@ -8,6 +8,14 @@
 
 #import <Foundation/Foundation.h>
 
+
+typedef enum {
+    MAKEYYA = 1 << 0,
+    
+    MADANEYYA = 1 << 1
+    
+}SURA_TYPE;
+
 @interface Sura : NSObject
 
 
@@ -22,5 +30,9 @@
 
 //the juze2 in which this sura exist
 @property (nonatomic, assign) int juz;
+
+@property (nonatomic, assign) int numberOfAyat;
+
+@property (nonatomic, assign) SURA_TYPE  suraType;
 
 @end

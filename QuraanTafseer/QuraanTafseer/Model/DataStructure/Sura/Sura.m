@@ -10,5 +10,5 @@
 
 @implementation Sura
 
-@synthesize suraName, suraNumber, juz, pageNumber;
+@synthesize suraName, suraNumber, juz, pageNumber, numberOfAyat, suraType;
 @end
