@@ -53,6 +53,48 @@ NSMutableArray *quranPartitions;
     return juz;
 }
 
+//take the Juz number 7 and return corresponding section 
+-(int)getSectionOfJuz:(int) juz
+{
+    int section = 0;
+    switch (juz) {
+        case 1:
+            section = 0;
+            break;
+        case 3:
+            section = 1;
+            break;
+        case 4:
+            section = 2;
+            break;
+        default:
+            section = juz - 3;
+            break;
+    }
+    return section;
+}
+
+- (NSArray *)sectionIndexTitlesForTableView:(UITableView *)tableView
+{
+    NSMutableArray *titles = [NSMutableArray array];
+    //for loop over sections
+    for (int i = 0; i < 28; i++) {
+        int juz = [self getJuzOfSection:i];
+        NSString *indexTitle = [NSString stringWithFormat:@" %d", juz];
+        [titles addObject:indexTitle];
+    }
+    
+    // return list of section titles to display in section index view (e.g. "ABCD...Z#")
+    
+    return titles;
+}
+- (NSInteger)tableView:(UITableView *)tableView sectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index
+{
+ 
+    return index;
+}
+
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 28;
@@ -87,11 +129,14 @@ NSMutableArray *quranPartitions;
     
     Sura *currentSura = [chaptersInJuz objectAtIndex:indexPath.row];
     //B Elham, Diwani Letter
-    cell.textLabel.font = [UIFont fontWithName:@"Diwani Letter" size:33];
+    cell.textLabel.font = [UIFont fontWithName:@"KFGQPC Uthmanic Script HAFS" size:33];
     ArabicConverter *converter = [[ArabicConverter alloc] init];
     
-	NSString* convertedString = [converter convertArabic:currentSura.suraName];
+	NSString* convertedString = [converter convertArabic:[NSString stringWithFormat:@"%@  ١ %d", currentSura.suraName, currentSura.suraNumber]];
+    
+    NSString *str =[NSString stringWithFormat:@"%@  ١", currentSura.suraName];
     cell.textLabel.text = convertedString;
+    
     cell.textLabel.textAlignment = NSTextAlignmentCenter;
     
     return cell;
@@ -112,14 +157,7 @@ NSMutableArray *quranPartitions;
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
-    
-    
-    
-    NSNumberFormatter *fmt = [[NSNumberFormatter alloc] init];
-    [fmt setPositiveFormat:@"0.###"];
-    NSNumber *n = [NSNumber numberWithFloat:12.50];
-    NSLog(@"%@", [fmt stringFromNumber:n]);
+
     
 	SuraDBManager *suraManager = [[SuraDBManager alloc] init];
     allChapters = [suraManager readRecords];

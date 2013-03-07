@@ -30,6 +30,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    //create options of UIPageController
 	NSDictionary *options = [NSDictionary dictionaryWithObject:
      [NSNumber numberWithInteger:UIPageViewControllerSpineLocationMin]
                                 forKey: UIPageViewControllerOptionSpineLocationKey];
@@ -59,26 +60,32 @@
 #pragma mark UIPageViewControllerDataSource
 #pragma mark -
 
+//Here i get the page 'after' not before. becaue it is Arabic
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerBeforeViewController:(UIViewController *)viewController
 {
  
-    
+    //check if i have reached the last page
     if (currentPageIndex == PAGES_COUNT) {
         return nil;
     }
+    
     currentPageIndex ++;
+    //get new page from storyBoard
     QuranPageViewController *pageToBeDisplayed = [self.storyboard instantiateViewControllerWithIdentifier:@"QuranPage"];
     pageToBeDisplayed.pageIndex = currentPageIndex;
     
     return pageToBeDisplayed;
 
 }
+
+//Here i get the page 'before' not After. becaue it is Arabic
 - (UIViewController *)pageViewController:(UIPageViewController *)pageViewController viewControllerAfterViewController:(UIViewController *)viewController
 {
-    if (currentPageIndex == 1) {
+    if (currentPageIndex == 1) { //check if i have reached the first page
         return nil;
     }
     currentPageIndex--;
+    //get new page from storyBoard
     QuranPageViewController *pageToBeDisplayed = [self.storyboard instantiateViewControllerWithIdentifier:@"QuranPage"];
     pageToBeDisplayed.pageIndex = currentPageIndex;
     

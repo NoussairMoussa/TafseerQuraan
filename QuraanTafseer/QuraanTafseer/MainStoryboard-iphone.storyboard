@@ -53,6 +53,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="8Vn-9J-wqp" kind="push" id="fv3-9i-hj3"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -61,7 +64,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xZa-Fb-UUn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="265" y="13"/>
+            <point key="canvasLocation" x="261" y="89"/>
         </scene>
         <!--Quran Chapters View Controller-->
         <scene sceneID="CcB-h5-Ayd">
@@ -101,7 +104,34 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="r3G-09-fMG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="737" y="8"/>
+            <point key="canvasLocation" x="961" y="-132"/>
+        </scene>
+        <!--Test View Controller-->
+        <scene sceneID="SO7-2v-fPr">
+            <objects>
+                <viewController id="8Vn-9J-wqp" customClass="TestViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xz9-4H-6cv">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="test" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="JCF-PZ-cDP" customClass="TTTAttributedLabel">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="35W-BQ-2Kd"/>
+                    <connections>
+                        <outlet property="quranLabel" destination="JCF-PZ-cDP" id="Pe2-S4-9lE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zte-UA-q2d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="959" y="633"/>
         </scene>
         <!--Paging Viewer View Controller-->
         <scene sceneID="sRm-Sn-77r">
@@ -177,6 +207,15 @@
             <source key="sourceIdentifier" type="project" relativePath="./Classes/QuranPageViewController.h"/>
             <relationships>
                 <relationship kind="outlet" name="quranPageImageView" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="TTTAttributedLabel" superclassName="UILabel">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TTTAttributedLabel.h"/>
+        </class>
+        <class className="TestViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/TestViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="quranLabel" candidateClass="TTTAttributedLabel"/>
             </relationships>
         </class>
     </classes>

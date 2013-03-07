@@ -25,6 +25,9 @@
 		217E4A2816E3B3B700A002E9 /* MainStoryboard-iphone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 217E4A2716E3B3B700A002E9 /* MainStoryboard-iphone.storyboard */; };
 		217E4A3916E3BAAB00A002E9 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217E4A3816E3BAAB00A002E9 /* ImageIO.framework */; };
 		217E4A3C16E3BC5A00A002E9 /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 217E4A3B16E3BC5A00A002E9 /* DataViewController.m */; };
+		217E6B9016E8E056009C4894 /* TTTAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 217E6B8F16E8E056009C4894 /* TTTAttributedLabel.m */; };
+		217E6B9316E8E06C009C4894 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 217E6B9216E8E06C009C4894 /* CoreText.framework */; };
+		217E6B9616E8E0D9009C4894 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 217E6B9516E8E0D9009C4894 /* TestViewController.m */; };
 		2180259816E49BF30046E80A /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; fileRef = 2180259716E49BF30046E80A /* SDWebImage */; };
 		2180259E16E4AADD0046E80A /* QuranChaptersViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2180259D16E4AADD0046E80A /* QuranChaptersViewController.m */; };
 		218025A416E4B4B60046E80A /* Sura.m in Sources */ = {isa = PBXBuildFile; fileRef = 218025A316E4B4B60046E80A /* Sura.m */; };
@@ -45,6 +48,9 @@
 		218025EB16E506B60046E80A /* 008.png in Resources */ = {isa = PBXBuildFile; fileRef = 218025E116E506B60046E80A /* 008.png */; };
 		218025EC16E506B60046E80A /* 009.png in Resources */ = {isa = PBXBuildFile; fileRef = 218025E216E506B60046E80A /* 009.png */; };
 		218025ED16E506B60046E80A /* 010.png in Resources */ = {isa = PBXBuildFile; fileRef = 218025E316E506B60046E80A /* 010.png */; };
+		21A64B1C16E76B66000FC90E /* ScheherazadeRegOT.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21A64B1B16E76B43000FC90E /* ScheherazadeRegOT.ttf */; };
+		21A64B1E16E76C2D000FC90E /* UthmanicHafs1 Ver09.otf in Resources */ = {isa = PBXBuildFile; fileRef = 21A64B1D16E76C2D000FC90E /* UthmanicHafs1 Ver09.otf */; };
+		21A64B2016E76F07000FC90E /* PDMS_Saleem_QuranFont-signed.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 21A64B1F16E76F07000FC90E /* PDMS_Saleem_QuranFont-signed.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -76,6 +82,11 @@
 		217E4A3816E3BAAB00A002E9 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		217E4A3A16E3BC5A00A002E9 /* DataViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
 		217E4A3B16E3BC5A00A002E9 /* DataViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
+		217E6B8E16E8E056009C4894 /* TTTAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTTAttributedLabel.h; sourceTree = "<group>"; };
+		217E6B8F16E8E056009C4894 /* TTTAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TTTAttributedLabel.m; sourceTree = "<group>"; };
+		217E6B9216E8E06C009C4894 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		217E6B9416E8E0D9009C4894 /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		217E6B9516E8E0D9009C4894 /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		2180259716E49BF30046E80A /* SDWebImage */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = SDWebImage; path = ../../../SDWebImageLibrary/SDWebImage.framework/Versions/A/SDWebImage; sourceTree = "<group>"; };
 		2180259C16E4AADD0046E80A /* QuranChaptersViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuranChaptersViewController.h; sourceTree = "<group>"; };
 		2180259D16E4AADD0046E80A /* QuranChaptersViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuranChaptersViewController.m; sourceTree = "<group>"; };
@@ -103,6 +114,9 @@
 		218025E116E506B60046E80A /* 008.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 008.png; sourceTree = "<group>"; };
 		218025E216E506B60046E80A /* 009.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 009.png; sourceTree = "<group>"; };
 		218025E316E506B60046E80A /* 010.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 010.png; sourceTree = "<group>"; };
+		21A64B1B16E76B43000FC90E /* ScheherazadeRegOT.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ScheherazadeRegOT.ttf; sourceTree = "<group>"; };
+		21A64B1D16E76C2D000FC90E /* UthmanicHafs1 Ver09.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "UthmanicHafs1 Ver09.otf"; sourceTree = "<group>"; };
+		21A64B1F16E76F07000FC90E /* PDMS_Saleem_QuranFont-signed.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "PDMS_Saleem_QuranFont-signed.ttf"; path = "../PDMS_Saleem_QuranFont-signed.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				217E6B9316E8E06C009C4894 /* CoreText.framework in Frameworks */,
 				2180259816E49BF30046E80A /* SDWebImage in Frameworks */,
 				217E4A3916E3BAAB00A002E9 /* ImageIO.framework in Frameworks */,
 				217E4A1716E36A5E00A002E9 /* libsqlite3.0.dylib in Frameworks */,
@@ -143,6 +158,7 @@
 		217E49EA16E3635400A002E9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				217E6B9216E8E06C009C4894 /* CoreText.framework */,
 				217E4A1616E36A5E00A002E9 /* libsqlite3.0.dylib */,
 				217E4A3816E3BAAB00A002E9 /* ImageIO.framework */,
 				217E49EB16E3635400A002E9 /* UIKit.framework */,
@@ -198,11 +214,12 @@
 			children = (
 				218025D216E4F3DF0046E80A /* PagingViewerViewController */,
 				218025CE16E4F15C0046E80A /* QuranPageViewController */,
-				218025CD16E4F0530046E80A /* QuranReaderViewController */,
 				2180259B16E4AAB80046E80A /* QuranChaptersViewController */,
 				217E4A2116E39AE100A002E9 /* MainViewController */,
 				217E4A3A16E3BC5A00A002E9 /* DataViewController.h */,
 				217E4A3B16E3BC5A00A002E9 /* DataViewController.m */,
+				217E6B9416E8E0D9009C4894 /* TestViewController.h */,
+				217E6B9516E8E0D9009C4894 /* TestViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -265,11 +282,21 @@
 		217E4A3316E3BA6000A002E9 /* Lib */ = {
 			isa = PBXGroup;
 			children = (
+				217E6B8D16E8E056009C4894 /* TTTAttributedLabel */,
 				218025C016E4C97D0046E80A /* ArabicConverter.h */,
 				218025C116E4C97D0046E80A /* ArabicConverter.m */,
 				217E4A3616E3BA9100A002E9 /* SDWebImage.framework */,
 			);
 			path = Lib;
+			sourceTree = "<group>";
+		};
+		217E6B8D16E8E056009C4894 /* TTTAttributedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				217E6B8E16E8E056009C4894 /* TTTAttributedLabel.h */,
+				217E6B8F16E8E056009C4894 /* TTTAttributedLabel.m */,
+			);
+			path = TTTAttributedLabel;
 			sourceTree = "<group>";
 		};
 		2180259B16E4AAB80046E80A /* QuranChaptersViewController */ = {
@@ -311,18 +338,14 @@
 		218025CC16E4EB950046E80A /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				21A64B1F16E76F07000FC90E /* PDMS_Saleem_QuranFont-signed.ttf */,
+				21A64B1D16E76C2D000FC90E /* UthmanicHafs1 Ver09.otf */,
+				21A64B1B16E76B43000FC90E /* ScheherazadeRegOT.ttf */,
 				218025C316E4CB850046E80A /* BElham.ttf */,
 				218025B116E4C58B0046E80A /* Diwanltr.ttf */,
 				218025AF16E4BFF50046E80A /* BFantezy.ttf */,
 			);
 			path = Fonts;
-			sourceTree = "<group>";
-		};
-		218025CD16E4F0530046E80A /* QuranReaderViewController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = QuranReaderViewController;
 			sourceTree = "<group>";
 		};
 		218025CE16E4F15C0046E80A /* QuranPageViewController */ = {
@@ -394,6 +417,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21A64B1C16E76B66000FC90E /* ScheherazadeRegOT.ttf in Resources */,
 				217E49F616E3635400A002E9 /* InfoPlist.strings in Resources */,
 				218025B216E4C58C0046E80A /* Diwanltr.ttf in Resources */,
 				217E49FE16E3635400A002E9 /* Default.png in Resources */,
@@ -413,6 +437,8 @@
 				218025EB16E506B60046E80A /* 008.png in Resources */,
 				218025EC16E506B60046E80A /* 009.png in Resources */,
 				218025ED16E506B60046E80A /* 010.png in Resources */,
+				21A64B1E16E76C2D000FC90E /* UthmanicHafs1 Ver09.otf in Resources */,
+				21A64B2016E76F07000FC90E /* PDMS_Saleem_QuranFont-signed.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +462,8 @@
 				218025A816E4B5480046E80A /* SuraDBManager.m in Sources */,
 				218025D116E4F17C0046E80A /* QuranPageViewController.m in Sources */,
 				218025D916E4FA040046E80A /* PagingViewerViewController.m in Sources */,
+				217E6B9016E8E056009C4894 /* TTTAttributedLabel.m in Sources */,
+				217E6B9616E8E0D9009C4894 /* TestViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

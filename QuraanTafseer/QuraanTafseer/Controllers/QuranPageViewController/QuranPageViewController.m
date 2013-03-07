@@ -27,7 +27,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-   
+   //get image from bundle and set it
     [self.quranPageImageView setImage:[UIImage imageNamed:[NSString stringWithFormat:@"%03d.png", pageIndex]]];
     
 }
